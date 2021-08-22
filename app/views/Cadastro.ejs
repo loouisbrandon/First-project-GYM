@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <%- include('../components/head.ejs', { title: 'Pagina Cadastro'}); %>
+  <body>
+    <%- include('../components/cadastro1.ejs'); %>
+
+   
+
+    <div class="content">
+      <div id="form">
+        <div class="title">Cadastro Techfit</div>
+
+        <form action="/Cadastro" method="POST">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              name="nome"
+                placeholder="Insira o seu nome"
+              required
+            />
+          </div>
+          
+
+          <div class="form-group">
+            <label for="nome">E-mail:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Insira o seu E-mail"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Telefone:</label>
+            <input
+              type="text"
+              name="nome"
+              placeholder="Insira seu Número de Telefone"
+              required
+            />
+          </div>
+
+
+          <div class="form-group">
+            <label for="nome">Profissão:</label>
+            <select name="profissao" required id="sexo">
+              <option value="">---</option>
+
+              <% opcoesProfissao.map(item => { %>
+              <option value="<%= item.value %>"><%= item.label %></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Data de Nascimento:</label>
+            <input
+              type="date"
+              name="datanascimento"
+              placeholder="Insira o sua data nascimento"
+              required
+            />
+          </div>
+          <div class="group">
+            <div class="form-group">
+              <label for="nome">Sexo:</label>
+              <select name="sexo" required id="sexo">
+                <option value="">---</option>
+
+                <% opcoesSexo.map(item => { %>
+                <option value="<%= item.value %>"><%= item.label %></option>
+                <% }) %>
+              </select>
+          
+            </div>
+
+            <div class="group">
+              <div class="form-group">
+                <label for="nome">Personal:</label>
+                <select name="sexo" required id="sexo">
+                  <option value="">---</option>
+  
+                  <% opcoesPersonal.map(item => { %>
+                  <option value="<%= item.value %>"><%= item.label %></option>
+                  <% }) %>
+                </select>
+            
+              </div>
+
+              <div class="group">
+                <div class="form-group">
+                  <label for="nome">Exercicio:</label>
+                  <select name="Exercicio" required id="Exercicio">
+                    <option value="">---</option>
+    
+                    <% opcoesExercicio.map(item => { %>
+                    <option value="<%= item.value %>"><%= item.label %></option>
+                    <% }) %>
+                  </select>
+              
+                </div>
+
+                <div class="group">
+                  <div class="form-group">
+                    <label for="nome">Nutricionista:</label>
+                    <select name="Nutricionista" required id="Nutricionista">
+                      <option value="">---</option>
+      
+                      <% opcoesNutricionista.map(item => { %>
+                      <option value="<%= item.value %>"><%= item.label %></option>
+                      <% }) %>
+                    </select>
+                
+                  </div>
+
+                  <div class="group">
+                    <div class="form-group">
+                      <label for="nome">Acompanhamento Medico</label>
+                      <select name="sexo" required id="Acompanhamento">
+                        <option value="">---</option>
+        
+                        <% opcoesAcompanhamento.map(item => { %>
+                        <option value="<%= item.value %>"><%= item.label %></option>
+                        <% }) %>
+                      </select>
+                  
+                    </div>
+          
+          <button>Enviar</button>
+
+        </form>
+      
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "belezinha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Loouisbrandon/belezinha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Loouisbrandon/belezinha/issues"
+  },
+  "homepage": "https://gitlab.com/Loouisbrandon/belezinha#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "html-pdf-node": "^1.0.7",
+    "joi": "^17.4.2",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+
+}

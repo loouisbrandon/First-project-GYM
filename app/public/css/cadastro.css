@@ -1,0 +1,14 @@
+body {
+    background-image:url(../img/young-man-sportswear-exercise-class-gym.jpg);
+    background-size: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+  }
+
+  .form-group{
+text-align: center;
+  }
+

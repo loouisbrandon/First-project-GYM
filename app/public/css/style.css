@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  position: relative;
+  height: 100vh;
+}
+
+body {
+  background-image: url(../img/weights-exercise-weightlifter-strong-athletic.jpg);
+  background-size: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Exo 2", sans-serif;
+  height: 100vh;
+}
+
+
+.content {
+  flex: 1;
+  margin: 10px auto;
+}
+
+header,
+
+
+header {
+  border-bottom: thin solid rgba(221, 221, 221, 0);
+}
+
+header .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+header .logo img {
+  max-width: 0px;
+}
+header .logo span {
+  font-size: 0px;
+}
+header .navbar {
+  position: fixed;
+    top: 0;
+    left: 75%;
+    margin: 1%;
+    padding: 0;
+    width: 100%;
+    height: 8px;
+
+}
+header .navbar ul li {
+  list-style: none;
+}
+
+header .navbar ul li a {
+  background: rgba(255, 255, 255, 0);
+  padding: 5px;
+  margin: 0 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+}
+header .navbar ul li a:hover {
+  transform: scale(1.1);
+    transition: all 0.7s;
+  background-color: #ff880100;
+  color: rgb(255, 136, 0);
+}
+
+footer {
+  font-size: 14px;
+  font-weight: 500;
+  border-top: thin solid #ddd;
+}
+
+input,
+select,
+textarea {
+  background-color: #fff;
+  border: thin solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* ## VIEWS */
+
+#home {
+  display: flex;
+  flex-direction: column;
+}
+#home img {
+  max-width: 600px;
+}
+
+#home a {
+  color:#e94606;
+  border: 2px solid #fafafa;
+  border-radius: 50px;
+  padding:10px 40px ;
+  background-color: rgba(0, 0, 0, 0);
+  position:absolute;
+		left:50%;
+		top:65%;
+		margin-left:-110px;
+		margin-top:-40px;
+
+}
+a:hover {
+  transform: scale(1.3);
+  transition: all 0.4s;
+} 
+span{
+  position: absolute;
+  top:40% ;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: lighter;
+
+}
+
+span {
+  font-size: 35px;
+  color: rgb(235, 83, 13);
+  font-weight: bolder
+
+}
+.group {
+  display:flow-root;
+}
+
+
+.group div {
+  flex: 1;
+  margin: 10px;
+}
+.form-group {
+  display:flex;
+  flex-direction:column;
+  background-color: #3333339c;
+  padding: 5px;
+  margin: 15px 0;
+  border-radius: 10px;
+
+}
+
+.estadocivil {
+  flex: 2 !important;
+}
+
+.form-group label {
+  margin: 25px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f77307;
+}
+
+#form {
+  background-color: rgba(0, 0, 0, 0.432);
+  min-width: 780px;
+  padding: 80px;
+  border-radius: 4% ;
+}
+
+#form .title {
+  font-size: 35px;
+  color: #ffffff;
+  margin: 10px 0;
+  text-align: center;
+}
+
+
+
+.tabela-preco
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: min(1600px, 100%);
+padding-block: 80%;
+
+}
+
+.card-preco
+{
+flex:1;
+max-width: 100%;
+background-color: #fff;
+margin: 30px 20px;
+
+text-align: center;
+cursor: pointer;
+overflow: hidden;
+color: #f35b03;
+transition: .3s linear;
+border-radius: 2%;
+}
+
+.card-preco:hover .card-preco-header
+{
+box-shadow: 0 0 0 26em #000000;
+
+}
+
+
+.card-preco-header
+{
+background-color: #f9780f;
+display: inline-block;
+color: #fff;
+padding: 1px 80px;
+border-radius: 0 0 20px 20px;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;
+transition: .4s line;
+}
+
+.preco
+{
+font-size: 70px;
+color: #f15a02;
+margin: 40px 0;
+transition: .2s linear;
+}
+
+
+.preco sup, .preco span
+{
+font-size: 22px;
+font-weight: 700;
+}
+
+.card-preco:hover, .card-preco:hover .preco
+{
+color: #fff;
+}
+
+.card-preco li
+{
+font-size: 16px;
+padding: 10px 0;
+text-transform: uppercase;
+}
+
+.btn
+{
+display: inline-block;
+margin-bottom: 40px;
+margin-top: 80px;
+border: 2px solid #ee5a04;
+color: #f86109;
+padding: 18px 40px;
+border-radius:  8px;
+text-transform:  uppercase;
+font-weight: 500;
+transition:  .3s linear;
+}
+
+.btn:hover
+{
+background-color: #000000;
+color: #fff; 
+}
+
+
+
