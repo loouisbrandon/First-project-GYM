@@ -5,33 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Rubik: ital @ 1 & display = swap "rel =" stylesheet ">
+    </head>
     <style>
+
       * {
         margin: 0;
         padding: 0;
       }
       body {
-        
+        font-family: 'Rubik', sans-serif;
         display: flex;
         flex-direction: column;
         height: 100vh;
+        background-color: #07070710;
+       
       }
       header {
+        
         text-align: center;
         border-bottom:thin solid #ddd;
         max-height: 70px;
         padding: 10px;
       }
       .content {
-        display: block;
+        display:block;
         flex: 1;
       }
       .form-control {
-        background-color: #474646;
-        padding: 10px;
+        background-color: #ffffff;
+        padding: 5px;
         display: flex;
         margin: 10px;
+        border-radius: 7%;
       }
       .label {
         font-weight: 800;
@@ -43,18 +51,14 @@
         text-align: center;
       }
     </style>
-  </head>
+  
   <body>
     <header>
-      <h2>Cadastro de <%= nome %></h2>
+      <h2>Cadastro Techfit <%= nome %></h2>
     </header>
-    <div class="content">
+   
       <div class="form-control">
-        <div class="label">Data de Nascimento:</div>
-        <%= datanascimento %>
-      </div>
-      <div class="form-control">
-        <div class="label">Email:</div>
+        <div class="label">Email: </div>
         <%= email %>
       </div>
       <div class="form-control">
@@ -66,31 +70,78 @@
     <div class="content">
       <div class="form-control">
         <div class="label">Esforço no trabalho:</div>
-        <%= datanascimento %>
+        <%= profissao %>
       </div>
       <div class="content">
         <div class="form-control">
           <div class="label">Acompanhamento Medico:</div>
-          <%= datanascimento %>
+          <%= Acompanhamento %>
         </div>
         <div class="content">
           <div class="form-control">
             <div class="label">Pratica de Exercicio:</div>
-            <%= datanascimento %>
+            <%= Exercicio %>
           </div>
           
           <div class="content">
             <div class="form-control">
               <div class="label">Acompanhamento com Personal:</div>
-              <%= datanascimento %>
+              <%= Personal %>
             </div>
            
             <div class="content">
               <div class="form-control">
                 <div class="label">Acompanhamento com Nutricionista:</div>
-                <%= datanascimento %>
+                <%= Nutricionista %>
               </div>
+              <span>TREINO A
+              PEITO
+              Crucifixo declinado c/halteres
+              Desenv. reto com barra
+              Desenv. Inclinado na máquina
+              OMBRO
+              Desenv. Militar c/pegada inversa
+              Elevação frontal na polia baixa
+              Elevação lateral na polia baixa
+              TRÍCEPS
+              Extensão corda atrás da nuca
+              Puxador tríceps vertical
+              
+              TREINO B
+              COSTAS
+              Puxador aberto na frente
+              Remada curvada c/pegada alta
+              Remada unilateral c/halter
+              LOMBAR
+              Hiperextensão lombar
+              DELTOIDE POSTERIOR
+              Crucifixo inverso no peck deck
+              BÍCEPS
+              Rosca Direta
+              Rosca concentrada
+              ANTEBRAÇO
+              Rosca de punho com barras
+              
+              TREINO C
+              PERNA COMPLETA
+              Mesa romana extensão
+              Leg Press 45
+              Agachamento Rack Inclinado
+              Stiff
+              Mesa romana flexora deitada
+              GLUTEOS
+              Abdutora
+              PANTURRILHA
+              Flexão plantar em pé
+              Flexão plantar sentado
+              
+              3 séries de 10 repetições
+              
+              Abdominais dia sim dia não – 2 exercícios 4 séries cada um.
+      </span>
     </div>
   </div>
+
+
   </body>
 </html>

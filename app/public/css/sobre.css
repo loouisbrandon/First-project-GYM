@@ -1,0 +1,184 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'quicksand', sans-serif ;
+    background: url(../img/exercise-weights-iron-dumbbell-with-extra-plates.jpg) top center no-repeat;
+    background-size: 100%;
+    
+
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 8px;
+
+
+}
+.logo :hover{
+      transform: scale(1.1);
+    transition: all 0.3s;
+}
+.logo{
+        
+    letter-spacing: 1px;
+    float: left;
+    color: rgb(253, 80, 0);
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0 6em;
+
+}
+.menu{
+    float: right;
+    line-height: 60px;
+    margin: 0 6em;
+    padding: 1.5%
+}
+.menu ul {
+    list-style: none;
+
+}
+.menu ul li{
+    display: inline-block;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: lighter;
+    padding: 0 20px;
+
+}
+.menu ul :hover{
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.header{
+    position: absolute;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: lighter;
+
+}
+
+.header span {
+    font-size: 52px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder
+
+}
+
+.header p{
+    font-size: 25px;
+
+}
+
+  .tabela-preco
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: min(1600px, 100%);
+	padding-block: 85px;
+	
+}
+
+.card-preco
+{
+	flex:1;
+	max-width: 360px;
+	background-color: #fff;
+	margin: 20px 10px;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+	color: #f35b03;
+	transition: .3s linear;
+}
+
+.card-preco:hover .card-preco-header
+{
+	box-shadow: 0 0 0 26em #000000;
+
+}
+
+
+.card-preco-header
+{
+	background-color: #f9780f;
+	display: inline-block;
+	color: #fff;
+	padding: 12px 30px;
+	border-radius: 0 0 20px 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: .4s line;
+}
+
+.preco
+{
+	font-size: 70px;
+	color: #f15a02;
+	margin: 40px 0;
+	transition: .2s linear;
+}
+
+
+.preco sup, .preco span
+{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.card-preco:hover, .card-preco:hover .preco
+{
+	color: #fff;
+}
+
+.card-preco li
+{
+	font-size: 16px;
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+
+.btn
+{
+	display: inline-block;
+	margin-bottom: 40px;
+	margin-top: 80px;
+	border: 2px solid #ee5a04;
+	color: #f86109;
+	padding: 18px 40px;
+	border-radius:  8px;
+	text-transform:  uppercase;
+	font-weight: 500;
+	transition:  .3s linear;
+}
+
+.btn:hover
+{
+	background-color: #000000;
+	color: #fff; 
+}
+
+
+@media screen and (max-width: 1100px)
+{
+	.card-preco
+	{
+		flex: 50%;
+	}
+} 
