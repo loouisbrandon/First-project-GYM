@@ -23,6 +23,7 @@ body {
   font-family: "Exo 2", sans-serif;
   height: 100vh;
   font-size: 120%;
+ 
 }
 
 
@@ -159,6 +160,7 @@ span {
 
 }
 
+
 .estadocivil {
   flex: 2 !important;
 }
@@ -184,15 +186,24 @@ span {
   text-align: center;
 }
 
+#form button{
+  color:#e94606;
+  border: 2px solid #fafafa;
+  border-radius: 50px;
+  padding:10px 40px ;
+  background-color: rgb(255, 255, 255);
+  position:absolute;
+}
 
 
 .tabela-preco
 {
+ 
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 width: min(1600px, 100%);
-padding-block: 100%;
+padding-block:100%;
 
 }
 

@@ -1,4 +1,3 @@
-
 const NutricionistaDB = [
     {
         id: 1, 
@@ -12,9 +11,7 @@ const NutricionistaDB = [
 
 
 const listaTodos = () => {
-
     return NutricionistaDB;
-
 }
 
 

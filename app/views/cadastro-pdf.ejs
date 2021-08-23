@@ -12,6 +12,7 @@
         padding: 0;
       }
       body {
+        
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -27,7 +28,7 @@
         flex: 1;
       }
       .form-control {
-        background-color: #fafafa;
+        background-color: #474646;
         padding: 10px;
         display: flex;
         margin: 10px;
@@ -60,15 +61,36 @@
         <div class="label">Sexo:</div>
         <%= sexo %>
       </div>
+   
+    
+    <div class="content">
       <div class="form-control">
-        <div class="label">Profissão:</div>
-        <%= profissao %>
+        <div class="label">Esforço no trabalho:</div>
+        <%= datanascimento %>
       </div>
-      <div class="form-control">
-        <div class="label">Estado civil</div>
-        <%= estadocivil %>
-      </div>
+      <div class="content">
+        <div class="form-control">
+          <div class="label">Acompanhamento Medico:</div>
+          <%= datanascimento %>
+        </div>
+        <div class="content">
+          <div class="form-control">
+            <div class="label">Pratica de Exercicio:</div>
+            <%= datanascimento %>
+          </div>
+          
+          <div class="content">
+            <div class="form-control">
+              <div class="label">Acompanhamento com Personal:</div>
+              <%= datanascimento %>
+            </div>
+           
+            <div class="content">
+              <div class="form-control">
+                <div class="label">Acompanhamento com Nutricionista:</div>
+                <%= datanascimento %>
+              </div>
     </div>
-    <footer>Esse é o meu footer</footer>
+  </div>
   </body>
 </html>

@@ -15,16 +15,12 @@ const path = require("path");
 const getCadastro = (req, res, next) => {
   
   const viewModel = {
-    nome: "",
-    title: "",
     opcoesSexo: optionsMapper("descricao", "id", sexoModel.listaTodos()),
     opcoesNutricionista: optionsMapper("descricao","id", NutricionistaModel.listaTodos()),
-    opcoesExercicio: optionsMapper("nome", "id", ExercicioModel.listaTodos()),
-    opcoesAcompanhamento: optionsMapper("nome", "id", AcompanhamentoModel.listaTodos()),
-    opcoesPersonal: optionsMapper("nome", "id", PersonalModel.listaTodos()),
+    opcoesExercicio: optionsMapper("descricao", "id", ExercicioModel.listaTodos()),
+    opcoesAcompanhamento: optionsMapper("descricao", "id", AcompanhamentoModel.listaTodos()),
+    opcoesPersonal: optionsMapper("descricao", "id", PersonalModel.listaTodos()),
     opcoesProfissao: optionsMapper("nome", "id", profissaoModel.listaTodos()),
-    comboEstado: (e) => console.log(e),
-    valorsecreto: JSON.stringify({ nome: "teste", idade: 0 }),
   };
 
  //construir o viewmodel
@@ -42,11 +38,11 @@ const postCadastro= (req, res, next) => {
 
 
   const sexoSelecionado = sexoModel.BuscaPorId(sexo);
- const NutricionistaSelecionado = NutricionistaModel.BuscaPorDescricao(Nutricionista);
- const profissaoSelecionado = profissaoModel.BuscaPorDescricao(profissao);
-  const ExercicioSelecionado = ExercicioModel.BuscaPorDescricao(Exercicio);
-  const AcompanhamentoSelecionado = AcompanhamentoModel.BuscaPorDescricao(Acompanhamento);
-  const PersonalSelecionado = PersonalModel.BuscaPorDescricao(Personal);
+ const NutricionistaSelecionado = NutricionistaModel.BuscaPorId(Nutricionista);
+ const profissaoSelecionado = profissaoModel.BuscaPorId(profissao);
+  const ExercicioSelecionado = ExercicioModel.BuscaPorId(Exercicio);
+  const AcompanhamentoSelecionado = AcompanhamentoModel.BuscaPorId(Acompanhamento);
+  const PersonalSelecionado = PersonalModel.BuscaPorId(Personal);
 
   const pdfViewModel = {
     nome, 
@@ -58,7 +54,7 @@ const postCadastro= (req, res, next) => {
     Exercicio: ExercicioSelecionado.descricao,
     Acompanhamento: AcompanhamentoSelecionado.descricao,
     profissao: profissaoSelecionado.nome,
-    valorsecreto: JSON.stringify({ nome: "teste", idade: 0 }),
+  
   };
     
   // montar o html

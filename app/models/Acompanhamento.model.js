@@ -1,4 +1,3 @@
-
 const AcompanhamentoDB = [
     {
         id: 1, 
@@ -11,6 +10,7 @@ const AcompanhamentoDB = [
 ];
 
 
+
 const listaTodos = () => {
 
     return AcompanhamentoDB;
@@ -20,7 +20,7 @@ const listaTodos = () => {
 
 const BuscaPorId = (id) => {
 
-    const result = ACompanhamentoDB.filter((item) => {
+    const result = AcompanhamentoDB.filter((item) => {
            return parseInt(item.id) === parseInt(id);
     });
 
