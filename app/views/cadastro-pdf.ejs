@@ -9,7 +9,7 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Rubik: ital @ 1 & display = swap "rel =" stylesheet ">
     </head>
-    <style>
+    <style type = "text/css">
 
       * {
         margin: 0;
@@ -20,15 +20,18 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
-        background-color: #07070710;
-       
+        background-color: #0c0c0c;
       }
       header {
-        
         text-align: center;
-        border-bottom:thin solid #ddd;
-        max-height: 70px;
+        max-height: 20px;
         padding: 10px;
+        
+      }
+      body p{
+        font-weight: bolder;
+        margin:5%;
+        
       }
       .content {
         display:block;
@@ -42,106 +45,137 @@
         border-radius: 7%;
       }
       .label {
-        font-weight: 800;
+        
+        font-weight: bolder;
       }
-      footer {
-        padding: 10px;
-        max-height: 70px;
-        border-top:thin solid #ddd;
-        text-align: center;
-      }
+ 
     </style>
   
   <body>
     <header>
-      <h2>Cadastro Techfit <%= nome %></h2>
+      <h2 style="color: rgb(247, 111, 0);">Cadastro Techfit <%= nome %></h2>
     </header>
    
       <div class="form-control">
-        <div class="label">Email: </div>
+        <div style = "color: rgb(255, 81, 0);"class="label">Email: </div>
         <%= email %>
       </div>
       <div class="form-control">
-        <div class="label">Sexo:</div>
+        <div class="label"style="color: rgb(255, 81, 0);">Sexo:</div>
         <%= sexo %>
       </div>
    
     
     <div class="content">
       <div class="form-control">
-        <div class="label">Esforço no trabalho:</div>
+        <div class="label"style="color: rgb(255, 81, 0);">Esforço no trabalho:</div>
         <%= profissao %>
       </div>
       <div class="content">
         <div class="form-control">
-          <div class="label">Acompanhamento Medico:</div>
+          <div class="label"style="color: rgb(255, 81, 0);">Acompanhamento Medico:</div>
           <%= Acompanhamento %>
         </div>
         <div class="content">
           <div class="form-control">
-            <div class="label">Pratica de Exercicio:</div>
+            <div class="label"style="color: rgb(255, 81, 0);">Pratica de Exercicio:</div>
             <%= Exercicio %>
           </div>
           
           <div class="content">
             <div class="form-control">
-              <div class="label">Acompanhamento com Personal:</div>
+              <div class="label"style="color: rgb(255, 81, 0);">Acompanhamento com Personal:</div>
               <%= Personal %>
             </div>
            
             <div class="content">
               <div class="form-control">
-                <div class="label">Acompanhamento com Nutricionista:</div>
+                <div class="label"style="color: rgb(255, 81, 0);">Acompanhamento com Nutricionista:</div>
                 <%= Nutricionista %>
               </div>
-              <span>TREINO A
-              PEITO
+              <p style="color: rgb(255, 255, 255);"><span style="color: rgb(255, 81, 0);">TREINO A
+                <br>
+              </span>
+              <br>
+             <span style="color:rgb(255, 81, 0) ;">PEITO</span> 
+              <br>
               Crucifixo declinado c/halteres
+              <br>
               Desenv. reto com barra
+              <br>
               Desenv. Inclinado na máquina
-              OMBRO
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">OMBRO</span>
+              <br>
               Desenv. Militar c/pegada inversa
+              <br>
               Elevação frontal na polia baixa
+              <br>
               Elevação lateral na polia baixa
-              TRÍCEPS
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">TRÍCEPS</span>
+              <br>
               Extensão corda atrás da nuca
               Puxador tríceps vertical
-              
-              TREINO B
-              COSTAS
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">TREINO B</span>
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">COSTAS</span>
+              <br>
               Puxador aberto na frente
               Remada curvada c/pegada alta
               Remada unilateral c/halter
-              LOMBAR
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">LOMBAR</span>
+              <br>
               Hiperextensão lombar
-              DELTOIDE POSTERIOR
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">DELTOIDE POSTERIOR</span>
+              <br>
               Crucifixo inverso no peck deck
-              BÍCEPS
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">BÍCEPS</span>
+              <br>
               Rosca Direta
               Rosca concentrada
-              ANTEBRAÇO
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">ANTEBRAÇO</span>
+              <br>
               Rosca de punho com barras
-              
-              TREINO C
-              PERNA COMPLETA
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">TREINO C</span>
+              <br>
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">PERNA COMPLETA</span>
+              <br>
               Mesa romana extensão
               Leg Press 45
               Agachamento Rack Inclinado
               Stiff
               Mesa romana flexora deitada
-              GLUTEOS
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">GLUTEOS</span>
+              <br>
               Abdutora
-              PANTURRILHA
+              <br>
+              <span style="color:rgb(255, 81, 0) ;">PANTURRILHA</span>
+              <br>
               Flexão plantar em pé
               Flexão plantar sentado
-              
+              <br>
               3 séries de 10 repetições
+              <br>
               
-              Abdominais dia sim dia não – 2 exercícios 4 séries cada um.
-      </span>
+              <span style="color: rgb(255, 94, 0);">Abdominais dia sim dia não – 2 exercícios - 4 séries cada um.</span>
+              
     </div>
   </div>
 
-
+ 
   </body>
 </html>
