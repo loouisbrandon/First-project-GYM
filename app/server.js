@@ -12,11 +12,10 @@ servidor.use(bp.urlencoded());
 const routeV1 = express.Router();
 rotas(servidor, routeV1);
 
-servidor.use(express.static(path.join(__dirname, "public"))); // apontar pasta publica para rodar os assets ("estoque")
+servidor.use(express.static(path.join(__dirname, "public")));
 
-servidor.set('views', path.join(__dirname, "views")) // informar o express onde está a pasta view
-servidor.set("view engine", "ejs"); // escolher o template enginner para rodar o "html" do projeto
-
+servidor.set('views', path.join(__dirname, "views"))
+servidor.set("view engine", "ejs");
 const porta = 3000;
 
 servidor.listen(porta, () => {

@@ -1,11 +1,11 @@
 const PersonalDB = [
     {
         id: 1, 
-        descricao: "Sim",
+        descricao: "Desejo acompanhamento profissional",
     },
     { 
         id: 2, 
-        descricao: "Não",
+        descricao: "Não pretendo ter algum acompanhamento",
     },
 ];
 

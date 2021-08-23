@@ -2,23 +2,15 @@
 const profissaoDB = [
     {
         id: 1, 
-        nome: "Programador",
+        nome: "Muito",
     },
     { 
         id: 2, 
-        nome: "Arquiteto",
+        nome: "Pouco",
     },
     { 
         id: 3, 
-        nome: "Padeiro",
-    },
-    { 
-        id: 4, 
-        nome: "Pintor",
-    },
-    { 
-        id: 5, 
-        nome: "Pedreiro",
+        nome: "Nenhum",
     },
 ];
 

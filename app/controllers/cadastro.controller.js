@@ -27,7 +27,7 @@ const getCadastro = (req, res, next) => {
     valorsecreto: JSON.stringify({ nome: "teste", idade: 0 }),
   };
 
- //construir view
+ //construir o viewmodel
   res.render("Cadastro", viewModel);
 
 };
@@ -36,7 +36,7 @@ const postCadastro= (req, res, next) => {
   
  
   
- // montar o viewmodel
+//montagem do viewmodel
 
   const { nome, email, datanascimento, sexo, Nutricionista, profissao, Exercicio, Acompanhamento, Personal } = req.body;
 
@@ -67,10 +67,10 @@ const postCadastro= (req, res, next) => {
   var filePath = path.join(__dirname, "../views/Cadastro-pdf.ejs");
   var templateHtml = fs.readFileSync(filePath, 'utf8');
   
-  // montar o pdf
+  // montagem do pdf
   const htmlPronto = ejs.render(templateHtml, pdfViewModel);
 
-  //retornar o pdf
+  //retorno do pdf 
 
   const file = {
     content: htmlPronto  
