@@ -73,13 +73,13 @@ $ npm run dev
 # O servidor iniciará na porta:5000 - acesse <http://localhost:5000>
 ```
 
-### Tecnologias
+## Tecnologias
 As seguintes ferramentas foram usadas na construção desse projeto:
 
 - [JavaScript](https://www.javascript.com/)
 - [Node.js](https://nodejs.org/en/)
 - [VisualStudio](https://code.visualstudio.com/)
 ---------------------
-
+## Autor
 Feito com Foco e muitas horas de aprendizado by BRANDON LOUIS 👋 <a href="#https://www.linkedin.com/in/brandon-louis-4ba989105">see my linkedIn</a>
 
